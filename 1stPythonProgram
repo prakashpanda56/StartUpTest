@@ -1,0 +1,26 @@
+name = input('Name of the Studaent : ')
+snum = input('Number scored : ')
+tnum = input('Total Number : ')
+
+a = int(snum)
+b = int(tnum)
+
+c = '{0:.2f}%'.format((a / b * 100))
+
+print('\n', name +' got', c,'marks')
+
+d = (a / b) * 100
+
+r = round(d,2)
+
+if d >= 60:
+  print('\n','And he got passed in 1st divison')
+ 
+elif d >= 50 and d <= 60:
+  print('\n','And he got passed in 2nd divison')
+   
+elif d < 50 and d >= 40:
+  print('\n','And he got passed in third divison')
+
+else:
+  print('\n','And he got failed')
